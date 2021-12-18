@@ -50,7 +50,7 @@ const Cart = () => {
         }
       }
     }
-  }, [dispatch, usuarioAutenticado, products]);
+  }, [dispatch, usuarioAutenticado, products, cartItems, itemsCarrito]);
 
   let totalSinDescuento = Math.ceil(
     cartItems.reduce((total, item) => total + item.precio * item.qty, 0)

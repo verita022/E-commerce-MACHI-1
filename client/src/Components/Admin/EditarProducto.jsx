@@ -10,7 +10,6 @@ import {
 } from "@mui/material";
 import axios from "axios";
 import { getProductsAdmin } from "../../Redux/actions/productAction";
-import { Controller, useForm} from "react-hook-form"
 import swal from "sweetalert";
 
 export default function EditarProducto() {
