@@ -41,9 +41,9 @@ export default function Tienda({ props }) {
         <SearchBar />
         <FiltrosYOrden seteoDePropiedad={props} />
       </div>
-      {/* Hacerle un Componente al Paginado Por Favor ↓ */}
+      
       <div className="ProdContTitle">
-        {/* <Products productos={productosPorCategorias}/>  */}
+      
         <div className="ProductsContainer">
           <Products productos={products?.resultado} />
         </div>
@@ -56,7 +56,7 @@ export default function Tienda({ props }) {
             changePagina(pagina - 1);
           }}
         >
-          {" "}
+        
           <FontAwesomeIcon icon={faChevronLeft} />
         </button>
         <label className="PageNumber">{pagina}</label>

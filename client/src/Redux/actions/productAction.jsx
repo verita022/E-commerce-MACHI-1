@@ -30,7 +30,7 @@ export const postProduct = (producto,swal) => {
             categoria ? categoria : ""
           }&nombre=${nombre ? nombre : ""}`
          );
-        console.log("en el action de la tienda", response.data)
+        
         return dispatch({
           type: productoConstante.GET_PRODUCTS,
           payload: response.data,

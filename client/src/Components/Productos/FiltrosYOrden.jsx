@@ -12,10 +12,7 @@ import { faRedo } from "@fortawesome/free-solid-svg-icons";
 
 export default function FiltrosYOrden({ seteoDePropiedad, cambioDeProps }) {
   const { nombre, categoria, ordenamiento } = useSelector((state) => state.productos);
-//   const [stateInput, setStateInput] = useState({
-//     categoria: "",
-//     ordenamiento: "",
-//   });
+
   const dispatch = useDispatch();
 
   const handleStateInput = (e) => {
@@ -103,33 +100,3 @@ export default function FiltrosYOrden({ seteoDePropiedad, cambioDeProps }) {
     </div>
   );
 }
-
-// const handleOrdenPorNombre = (e) => {
-//     // if(ordenP){
-//     //    dispatch(reset())
-//     // }
-//     dispatch(setOrdenA(e.target.value))
-//     dispatch(getProducts({ nombre, ordenA: e.target.value, filtroC }))
-//     dispatch(setPagina(1))
-// }
-
-// const handleOrdenPorPrecio = (e) => {
-//     // if(ordenA){
-//     //    dispatch(reset())
-//     // }
-//     dispatch(setOrdenP(e.target.value))
-//     dispatch(getProducts({ nombre, ordenP: e.target.value, filtroC }))
-//     dispatch(setPagina(1))
-// }
-
-// const handleFiltroPorCategoria = (e) => {
-//     // if(e.target.value === "Categoria"){
-//     //    return rechargeHome();
-//     // }
-//     setSelectInput({
-//         [e.target.name]:e.target.value
-//     })
-//     dispatch(setFiltroC(selectInput.categorias))
-//     dispatch(getProducts({ nombre, ordenA, ordenP, filtroC: e.target.value}))
-//     dispatch(setPagina(1))
-// }
